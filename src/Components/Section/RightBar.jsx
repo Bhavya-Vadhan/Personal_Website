@@ -1,17 +1,18 @@
 import { Data } from '../Data'
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
+import { FaLinkedinIn, FaInstagram } from "react-icons/fa"
 
 const RightBar = () => {
     return (
         <>
-            <div className='bg-white rounded-2xl space-y-5 p-[18px] sticky top-5'>
+            <div className='bg-white dark:bg-black rounded-2xl space-y-5 p-[18px] sticky top-5'>
                 {
                     Data.map(e => {
-                        const { id, path, name } = e;
+                        const { id, path, icon, name } = e;
                         return (
-                            <div key={id} className='bg-lightgrey w-[84px] h-[84px] flex justify-center items-center rounded-lg transition-all hover:bg-main group'>
-                                <NavLink to={path} className="text-sm text-[#44566c] font-medium group-hover:text-white">{name}</NavLink>
-                            </div>
+                            <NavLink key={id} to={path} className={({ isActive }) => `w-[84px] h-[84px] bg-lightgrey text-[13px] font-medium text-[#44566c] dark:bg-[#212425] dark:hover:bg-main rounded-lg flex justify-center flex-col items-center gap-1 transition-all group hover:bg-main hover:text-white ${isActive ? "bg-main text-white" : null}`}>
+                                <span>{icon}</span>{name}
+                            </NavLink>
                         )
                     })
                 }

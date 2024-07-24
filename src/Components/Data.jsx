@@ -1,28 +1,34 @@
-import { IoGridOutline, IoCodeSlash, IoCameraOutline } from "react-icons/io5";
-import { MdGraphicEq } from "react-icons/md";
-import { FaMobileAlt } from "react-icons/fa";
-import { FaLocationDot, FaEnvelopeOpenText } from "react-icons/fa6";
+import { IoGridOutline, IoCodeSlash, IoCameraOutline } from "react-icons/io5"
+import { MdGraphicEq } from "react-icons/md"
+import { FaMobileAlt, FaRegAddressCard } from "react-icons/fa"
+import { FaLocationDot, FaEnvelopeOpenText } from "react-icons/fa6"
+import { RiFileUserLine } from "react-icons/ri"
+import { IoBriefcaseOutline, IoNewspaperOutline } from "react-icons/io5"
 import project_one from "../assets/images/project-1.png"
 
 const Data = [
     {
         id: 0,
         path: "",
+        icon: <FaRegAddressCard className="w-6 h-6" />,
         name: "About"
     },
     {
         id: 1,
         path: "Resume",
+        icon: <RiFileUserLine className="w-6 h-6" />,
         name: "Resume"
     },
     {
         id: 2,
         path: "Works",
+        icon: <IoBriefcaseOutline className="w-6 h-6" />,
         name: "Works"
     },
     {
         id: 3,
         path: "Contact",
+        icon: <IoNewspaperOutline className="w-6 h-6" />,
         name: "Contact"
     }
 ]
@@ -31,30 +37,30 @@ const service = [
     {
         id: 0,
         name: "Ui/Ux Design",
-        icon: <IoGridOutline className="text-[#d566ff] w-9 h-9" />,
+        icon: <IoGridOutline className="text-main w-9 h-9" />,
         background: "#fff4f4",
-        para: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
+        para: "UI/UX design creates intuitive, efficient, and visually appealing user interfaces and experiences, enhancing satisfaction and usability of digital products."
     },
     {
         id: 1,
         name: "Graphic Designing",
-        icon: <MdGraphicEq className="text-[#ff6080] w-9 h-9" />,
+        icon: <MdGraphicEq className="text-main w-9 h-9" />,
         background: "#eef5fa",
-        para: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
+        para: "Graphic design creates visual content to convey messages, using typography, imagery, color, and layout to enhance communication across various media."
     },
     {
         id: 2,
         name: "Photography",
-        icon: <IoCameraOutline className="text-[#ff6080] w-9 h-9" />,
+        icon: <IoCameraOutline className="text-main w-9 h-9" />,
         background: "#eef5fa",
-        para: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
+        para: "Photography is the art and practice of capturing images using a camera to create visual representations of moments, scenes, or subjects."
     },
     {
         id: 3,
         name: "Web Development",
-        icon: <IoCodeSlash className="text-[#269fff] w-9 h-9" />,
+        icon: <IoCodeSlash className="text-main w-9 h-9" />,
         background: "#fff4f4",
-        para: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."
+        para: "Web development involves building and maintaining websites, focusing on coding, design, and functionality to ensure optimal user experience and performance."
     }
 ]
 
@@ -62,19 +68,19 @@ const info = [
     {
         id: 0,
         name: "Phone",
-        icon: <FaMobileAlt className="w-5 h-5 text-[#e93b81]" />,
+        icon: <FaMobileAlt className="w-5 h-5 text-main dark:text-white" />,
         detail: "9953447708"
     },
     {
         id: 1,
         name: "Email",
-        icon: <FaEnvelopeOpenText className="w-5 h-5 text-[#6ab5b9]" />,
+        icon: <FaEnvelopeOpenText className="w-5 h-5 text-main dark:text-white" />,
         detail: "Bhavyavadhan4@gmail.com"
     },
     {
         id: 2,
         name: "Location",
-        icon: <FaLocationDot className="w-5 h-5 text-[#fd7590]" />,
+        icon: <FaLocationDot className="w-5 h-5 text-main dark:text-white" />,
         detail: "New Delhi, India"
     }
 ]
@@ -108,25 +114,21 @@ const skills = [
     {
         id: 0,
         skill: "Web Design",
-        background: "#ff6464",
         percentage: "85%",
     },
     {
         id: 1,
         skill: "Graphic Design",
-        background: "#9272d4",
         percentage: "90%",
     },
     {
         id: 2,
         skill: "React JS",
-        background: "#5185d4",
         percentage: "50%",
     },
     {
         id: 3,
         skill: "Git & GitHub",
-        background: "#ca56f2",
         percentage: "72%",
     }
 ]

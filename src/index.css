@@ -12,14 +12,6 @@
         font-family: "Poppins", sans-serif;
     }
 
-    body {
-        background: url('./assets/images/body-bg.jpg') no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: 100vh;
-    }
-
     h1,
     h2,
     h3,
