@@ -10,7 +10,7 @@ const RightBar = () => {
                     Data.map(e => {
                         const { id, path, icon, name } = e;
                         return (
-                            <NavLink key={id} to={path} className={({ isActive }) => `w-[84px] h-[84px] bg-lightgrey text-[13px] font-medium text-[#44566c] dark:bg-[#212425] dark:hover:bg-main rounded-lg flex justify-center flex-col items-center gap-1 transition-all group hover:bg-main hover:text-white ${isActive ? "bg-main text-white" : null}`}>
+                            <NavLink key={id} to={path} className={({ isActive }) => `w-[84px] h-[84px] bg-lightgrey text-[13px] font-medium text-[#44566c] dark:bg-[#212425] dark:hover:bg-main rounded-lg flex justify-center flex-col items-center gap-1 transition-all group dark:text-[#a6a6a6] dark:hover:text-white hover:bg-main hover:text-white ${isActive ? "bg-main text-white dark:bg-main dark:text-white" : null}`}>
                                 <span>{icon}</span>{name}
                             </NavLink>
                         )

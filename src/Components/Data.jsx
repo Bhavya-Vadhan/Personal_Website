@@ -114,22 +114,22 @@ const skills = [
     {
         id: 0,
         skill: "Web Design",
-        percentage: "85%",
+        percentage: 85,
     },
     {
         id: 1,
         skill: "Graphic Design",
-        percentage: "90%",
+        percentage: 90,
     },
     {
         id: 2,
         skill: "React JS",
-        percentage: "50%",
+        percentage: 50,
     },
     {
         id: 3,
         skill: "Git & GitHub",
-        percentage: "72%",
+        percentage: 72,
     }
 ]
 
@@ -164,34 +164,7 @@ const portfolio = [
         image: project_one,
         path: "https://reactjs-portfolio-website-rust.vercel.app",
         Technologies: ["React JS", "Tailwind", "Git & GitHub"],
-        background: "#F0EBE3"
-    },
-    {
-        id: 1,
-        category: "Marketing",
-        name: "WebTeck Technologies",
-        image: project_one,
-        path: "https://reactjs-portfolio-website-rust.vercel.app",
-        Technologies: ["React JS", "Tailwind", "Git & GitHub"],
-        background: "#F6E6CB"
-    },
-    {
-        id: 2,
-        category: "Marketing",
-        name: "WebTeck Technologies",
-        image: project_one,
-        path: "https://reactjs-portfolio-website-rust.vercel.app",
-        Technologies: ["React JS", "Tailwind", "Git & GitHub"],
-        background: "#F6E6CB"
-    },
-    {
-        id: 3,
-        category: "Marketing",
-        name: "WebTeck Technologies",
-        image: project_one,
-        path: "https://reactjs-portfolio-website-rust.vercel.app",
-        Technologies: ["React JS", "Tailwind", "Git & GitHub"],
-        background: "#F0EBE3"
+        background: "#fff4f4"
     }
 ]
 

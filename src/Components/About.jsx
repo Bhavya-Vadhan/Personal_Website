@@ -5,7 +5,7 @@ const About = () => {
         <>
             <div className="bg-white rounded-2xl dark:bg-black max-md:mx-4">
                 <div className="px-10 pt-14 max-md:px-5">
-                    <h1 className="text-[40px] text-black dark:text-white font-semibold mb-7 relative after:content-[''] after:absolute after:top-0 after:bottom-0 after:left-[140px] after:my-auto after:w-2/6 after:h-[3px] after:bg-main">About</h1>
+                    <h1 className="text-[40px] text-black dark:text-white font-semibold mb-7 relative after:content-[''] after:absolute after:top-0 after:bottom-0 after:left-[140px] after:my-auto after:w-2/6 after:h-[3px] after:bg-main max-md:text-[35px] max-md:after:left-[130px]">About</h1>
                     <p className="text-[15px] text-black dark:text-white leading-[26px] mb-3">We are a team of passionate front-end developers dedicated to crafting exceptional digital experiences. Our expertise lies in transforming creative designs into responsive, user-friendly websites and applications using cutting-edge technologies.</p>
                     <p className="text-[15px] text-black dark:text-white leading-[26px]">We focus on delivering high-quality code, seamless performance, and engaging interfaces that meet our clients' unique needs and exceed their expectations. With a commitment to innovation and excellence, we strive to bring every project to life with precision and creativity.</p>
                 </div>

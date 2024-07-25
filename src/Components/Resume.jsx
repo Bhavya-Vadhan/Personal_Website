@@ -1,13 +1,14 @@
 import { LuSchool } from "react-icons/lu";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import { education, experience, skills, knowledges } from "./Data";
+import Progress_bar from "./Section/Progress_bar"
 
 const Resume = () => {
     return (
         <>
             <div className="bg-white dark:bg-black rounded-2xl max-md:mx-4">
                 <div className="px-10 pt-14 max-md:px-5">
-                    <h1 className="text-[40px] text-black font-semibold mb-7 relative after:content-[''] after:absolute after:top-0 after:bottom-0 after:left-[180px] after:my-auto after:w-2/6 after:h-[3px] after:bg-main dark:text-white">Resume</h1>
+                    <h1 className="text-[40px] text-black font-semibold mb-7 relative after:content-[''] after:absolute after:top-0 after:bottom-0 after:left-[180px] after:my-auto after:w-2/6 after:h-[3px] after:bg-main dark:text-white max-md:text-[35px] max-md:after:left-[160px]">Resume</h1>
                 </div>
                 <div className="className= px-10 pb-10 max-md:px-5">
                     <div className="grid grid-cols-2 gap-5 max-md:grid-cols-1 max-md:gap-8">
@@ -60,16 +61,14 @@ const Resume = () => {
                             <div className="space-y-5">
                                 {
                                     skills.map(e => {
-                                        const { id, skill, background, percentage } = e
+                                        const { id, skill, percentage } = e
                                         return (
                                             <div key={id}>
                                                 <div className="flex justify-between mb-[10px]">
                                                     <h4 className="font-[poppins] text-sm text-[#44566c] font-medium dark:text-[#a6a6a6]">{skill}</h4>
                                                     <p className="font-[poppins] text-sm text-[#44566c] font-medium dark:text-[#a6a6a6]">{percentage}</p>
                                                 </div>
-                                                <div className="w-full h-[6px] bg-[#edf2f2] rounded-md">
-                                                    <div className="h-full rounded-md bg-main" style={{ width: percentage }}></div>
-                                                </div>
+                                                <Progress_bar width={percentage} />
                                             </div>
                                         )
                                     })

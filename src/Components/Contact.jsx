@@ -3,7 +3,7 @@ const Contact = () => {
         <>
             <div className="bg-white rounded-2xl dark:bg-black max-md:mx-4">
                 <div className="px-10 pt-14 mb-7 max-md:px-5">
-                    <h1 className="text-[40px] text-black font-semibold relative after:content-[''] after:absolute after:top-0 after:bottom-0 after:left-[175px] after:my-auto after:w-2/6 after:h-[3px] after:bg-main dark:text-white">Contact</h1>
+                    <h1 className="text-[40px] text-black font-semibold relative after:content-[''] after:absolute after:top-0 after:bottom-0 after:left-[175px] after:my-auto after:w-2/6 after:h-[3px] after:bg-main dark:text-white max-md:text-[35px] max-md:after:left-[160px]">Contact</h1>
                 </div>
                 <div className="bg-lightgrey mx-10 mb-10 py-14 px-11 rounded-2xl dark:bg-[#0d0d0d] max-md:mx-5 max-md:px-6">
                     <div className="max-w-[450px] mb-10">
