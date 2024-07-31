@@ -8,6 +8,12 @@ import { IoClose } from "react-icons/io5";
 import { Data } from './Components/Data'
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
+import About from "./Components/About"
+import Resume from "./Components/Resume"
+import Works from "./Components/Works"
+import Contact from "./Components/Contact"
+import { Route, Routes } from "react-router-dom"
+
 
 const App = () => {
 
@@ -60,14 +66,19 @@ const App = () => {
             <LeftBar />
           </div>
           <div className="w-3/5 max-md:w-full">
-            <Outlet />
+            <Routes>
+              <Route path="" element={<About />} />
+              <Route path="Resume" element={<Resume />} />
+              <Route path="Works" element={<Works />} />
+              <Route path="Contact" element={<Contact />} />
+            </Routes>
           </div>
           <div className="w-[10%] max-md:w-full max-md:hidden">
             <RightBar />
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
